@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ИИ-штат — курс Алёны Литвиновой: 8 ИИ-сотрудников для малого бизнеса</title>
+<meta name="description" content="8 недель, 8 ИИ-сотрудников: контент, тексты, ответы клиентам и продвижение в нейросетях для малого бизнеса — без найма и программистов. Старт потока 7 декабря.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F4F6F2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ИИ-штат — 8 ИИ-сотрудников для вашего бизнеса за 8 недель">
+<meta property="og:description" content="Курс Алёны Литвиновой, основателя агентства М360. Контент, тексты, ответы клиентам и продвижение в нейросетях без найма.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Geologica:wght,SHRP@300..800,0..100&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="assets/img/alena-portrait.webp">
+<script>
+  // ?motion=1 / ?motion=0 — принудительно включить/выключить анимацию, запоминается
+  (function () {
+    var q = new URLSearchParams(location.search).get('motion'), k = 'ii-motion', v = null;
+    try { if (q === '1' || q === '0') localStorage.setItem(k, q); v = localStorage.getItem(k); } catch (e) { v = q; }
+    var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (v === '1' || (v !== '0' && !calm)) document.documentElement.classList.add('motion');
+  })();
+</script>
+<!-- Яндекс.Метрика: вставить код счётчика и указать ID в js/main.js (METRIKA_ID)
+<script>(function(m,e,t,r,i,k,a){...})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym([ID счётчика], "init", {webvisor:true});</script>
+-->
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3 2.25" result="holes"/>
+      <feComposite in="SourceGraphic" in2="holes" operator="in" result="pitted"/>
+      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="1" seed="3" result="w"/>
+      <feDisplacementMap in="pitted" in2="w" scale="2.6"/>
+    </filter>
+  </defs>
+</svg>
+
+<a class="sr" href="#main">К содержанию</a>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="logo" href="./" aria-label="ИИ-штат, на главную"><b>ИИ-штат</b><span>Алёна Литвинова</span></a>
+    <nav class="nav__links" aria-label="Разделы">
+      <a href="#staff">Программа</a>
+      <a href="#about">Автор</a>
+      <a href="#tariffs">Форматы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn" href="practicum.html" data-goal="click_practicum">Практикум<span class="opt">&nbsp;1–3 декабря</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. Первый экран -->
+<section class="s--paper hero" aria-labelledby="h-hero">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="order"><b>Приказ № 1</b> о приёме на работу восьми ИИ-сотрудников <span style="white-space:nowrap">в <span class="hand">ваш бизнес</span></span></p>
+      <h1 class="d1" id="h-hero">Соберите ИИ‑штат для своего бизнеса</h1>
+      <p class="lead">8 ИИ-сотрудников за 8 недель: контент, тексты, ответы клиентам и продвижение в нейросетях. Без найма и программистов, в маленькой группе и с человеком рядом, который не даст бросить.</p>
+      <div class="hero__cta">
+        <a class="btn" href="practicum.html" data-goal="click_practicum">Бесплатный практикум 1–3 декабря</a>
+        <a class="btn btn--line" href="#tariffs" data-goal="click_formats">Выбрать формат</a>
+      </div>
+      <div class="fields">
+        <div class="field"><small>Старт потока</small><span>7 декабря</span></div>
+        <div class="field"><small>Занятий онлайн</small><span>8 по 1,5 часа</span></div>
+        <div class="field"><small>Группа</small><span>8–10 человек</span></div>
+        <div class="field"><small>Рассрочка</small><span>от 7 000 ₽ в месяц</span></div>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <img src="assets/img/alena-portrait.webp" width="892" height="1600" alt="Алёна Литвинова, чёрно-белый портрет: тёмный пиджак, рука у лица" fetchpriority="high">
+      <div class="approve" aria-label="Утверждаю: руководитель ИИ-штата Алёна Литвинова">
+        <b>Утверждаю</b>
+        Руководитель ИИ-штата,<br>основатель агентства М360
+        <div class="approve__line"><span class="approve__sign hand" aria-hidden="true">Литвинова</span></div>
+        <div class="approve__name">А. А. Литвинова</div>
+      </div>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="sealc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="5"/>
+          <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <text fill="currentColor" font-family="Geologica, sans-serif" font-size="17" font-weight="700" letter-spacing="3.2"><textPath href="#sealc">АГЕНТСТВО М360 · ЕКАТЕРИНБУРГ · ИИ-ШТАТ ·</textPath></text>
+          <text x="100" y="96" text-anchor="middle" fill="currentColor" font-family="Geologica, sans-serif" font-size="25" font-weight="800">ИИ-ШТАТ</text>
+          <text x="100" y="122" text-anchor="middle" fill="currentColor" font-family="Geologica, sans-serif" font-size="14" font-weight="600">8 сотрудников</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Узнаёте себя -->
+<section class="s s--paper" aria-labelledby="h-you">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-you">Узнаёте себя?</h2>
+      <p class="lead">Это фразы из интервью, которые Алёна провела с 21 клиентом в сентябре 2026 года.</p>
+    </div>
+    <div class="claims">
+      <article class="claim">
+        <q>Я бы делала это с большим удовольствием, если бы понимала, что не зря</q>
+        <h3>Работаю одна</h3>
+        <p>Я специалист, а не маркетолог. Веду приём, а между клиентами пытаюсь снять контент. Заявки то густо, то пусто.</p>
+      </article>
+      <article class="claim">
+        <q>Я устала биться об эти проблемы, уже не знаю, что ещё придумать</q>
+        <h3>Веду бизнес с командой</h3>
+        <p>Нанимала маркетологов и таргетологов, но не могу проверить, что они делают. Деньги уходят, системы нет.</p>
+      </article>
+      <article class="claim">
+        <q>Чтобы сделать видео, надо понять, как работает нейросеть, а я пока не знаю как</q>
+        <h3>Хочу уметь сама</h3>
+        <p>Пробую нейросети по вечерам: что-то получается, что-то нет. Нужен понятный пошаговый план без терминов.</p>
+      </article>
+    </div>
+    <p class="after-note">Если хотя бы одна карточка про вас, дальше станет понятно, что с этим делать.</p>
+  </div>
+</section>
+
+<!-- 3. Почему сейчас -->
+<section class="s s--ink" aria-labelledby="h-why">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-why">Малому бизнесу в 2026 году не нужен ещё один сотрудник. Ему нужен ИИ-штат</h2>
+    </div>
+    <div class="ledger">
+      <div class="ledger__row">
+        <div class="ledger__n num" data-count="22" data-suffix="%">22%</div>
+        <div class="ledger__t">НДС с 2026 года, а порог освобождения на УСН снизился с 60 до 20 млн ₽.
+          <a class="link" href="https://riamo.ru/articles/lyudi/nds-22-i-novye-pravila-usn-kak-nalogovaja-reforma-2026-goda-udarila-po-malomu-biznesu/" target="_blank" rel="noopener">РИАМО, июнь 2026</a></div>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__n num" data-count="92000" data-prefix="≈" data-suffix=" ₽">≈92 000 ₽</div>
+        <div class="ledger__t">медиана зарплаты специалиста по продвижению в месяц по данным hh.ru.
+          <a class="link" href="https://checkroi.ru/blog/zarplata-spetsialista-po-prodvizheniyu/" target="_blank" rel="noopener">CheckROI, сентябрь 2026</a></div>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__n num" data-count="53" data-suffix="%">53%</div>
+        <div class="ledger__t">малого бизнеса уже пользуются ИИ. Год назад таких было 17%.
+          <a class="link" href="https://www.sostav.ru/publication/ii-uzhe-ispolzuet-kazhdyj-vtoroj-malyj-biznes-85769.html" target="_blank" rel="noopener">ПСБ и «Опора России», Sostav, август 2026</a></div>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__n num" data-count="58.9" data-suffix="%">58,9%</div>
+        <div class="ledger__t">людей пользуются нейросетями, когда выбирают товары и услуги. Половина не перепроверяет ответ.
+          <a class="link" href="https://www.sostav.ru/blogs/280918/90232" target="_blank" rel="noopener">опрос 3 000 пользователей, Sostav, июнь 2026</a></div>
+      </div>
+    </div>
+    <div class="verdict">
+      <span></span>
+      <p>Нанимать дорого, а клиенты уже спрашивают Алису и ChatGPT. Выигрывает тот, у кого рутину делает ИИ, а решения принимает человек.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Штатное расписание -->
+<section class="s s--paper" id="staff" aria-labelledby="h-staff">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-staff">8 недель — 8 сотрудников</h2>
+      <p class="lead">Каждую неделю вы «нанимаете» одного ИИ-сотрудника и настраиваете его на своём бизнесе. К концу курса у вас работает целый штат.</p>
+    </div>
+
+    <div class="sheet" role="table" aria-label="Штатное расписание ИИ-штата">
+      <div class="sheet__top">
+        <b>Штатное расписание</b>
+        <span>организация: <span class="hand">ваш бизнес</span></span>
+      </div>
+      <div class="sheet__cols" role="row">
+        <span role="columnheader">Неделя</span><span role="columnheader">Должность</span><span role="columnheader">Что умеет к концу недели</span><span role="columnheader">Статус</span>
+      </div>
+      <div class="sheet__rows" id="rows"><!-- строки собирает js/main.js из STAFF --></div>
+    </div>
+
+    <div class="sheet__foot">
+      <p>Финал — день защиты: вы показываете свой ИИ-штат и считаете, сколько часов в неделю он вам вернул. Работаем с нейросетями, доступными в России (Алиса, GigaChat), и с зарубежными.</p>
+      <a class="btn btn--line" href="practicum.html" data-goal="click_practicum">Попробовать на практикуме</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Ведомость -->
+<section class="s s--ink" aria-labelledby="h-pay">
+  <div class="wrap payroll">
+    <div class="s__head">
+      <h2 class="h2" id="h-pay">Сколько стоит штат</h2>
+      <p class="lead">ИИ-штат забирает рутину. Решения по-прежнему принимаете вы.</p>
+    </div>
+    <div class="slip">
+      <div class="slip__row">
+        <b>Специалист по продвижению</b>
+        <span class="slip__sum num">≈92 000 ₽</span>
+        <small>каждый месяц, плюс налоги на зарплату, отпуск и больничные</small>
+      </div>
+      <div class="slip__row slip__row--ours">
+        <b>ИИ-штат из 8 сотрудников</b>
+        <span class="slip__sum num">70 000 ₽</span>
+        <small>один раз, и сотрудники остаются с вами после курса</small>
+      </div>
+      <div class="slip__total">
+        <span>Медиана по данным hh.ru, CheckROI, сентябрь 2026</span>
+        <span>тариф «ИИ-штат» в группе</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Как проходит занятие -->
+<section class="s s--paper" aria-labelledby="h-lesson">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-lesson">Как проходит каждое занятие</h2>
+    </div>
+    <ol class="steps">
+      <li><b>Разбор</b><span>Что решаем и какой результат нужен</span></li>
+      <li><b>Демонстрация</b><span>Алёна делает задачу вживую на экране</span></li>
+      <li><b>Практика</b><span>Вы повторяете шаг на своём бизнесе</span></li>
+      <li><b>Проверка</b><span>Редактируем и проверяем результат вместе</span></li>
+      <li><b>Шаблон</b><span>Сохраняете, чтобы повторять без помощи</span></li>
+    </ol>
+    <p class="steps-note muted">Перед стартом вы выбираете продукт или услугу, на которых работаете весь курс. Поэтому через неделю у вас не конспект, а работающий сотрудник.</p>
+  </div>
+</section>
+
+<section class="s s--paper" aria-labelledby="h-ba">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-ba">Что изменится за 8 недель</h2>
+    </div>
+    <div class="ba">
+      <div class="was">
+        <h3>Сейчас</h3>
+        <ul>
+          <li>Заявки то густо, то пусто</li>
+          <li>Контент, когда есть силы</li>
+          <li>Ответы клиентам вручную, по вечерам</li>
+          <li>Нейросети: изредка спросить что-то у ChatGPT</li>
+        </ul>
+      </div>
+      <div class="will">
+        <h3>Через 8 недель</h3>
+        <ul>
+          <li>Контент-план и тексты готовятся с ИИ за часы, а не дни</li>
+          <li>Есть шаблоны ответов и простой бот для заявок</li>
+          <li>Нейросети знают о вашем бизнесе</li>
+          <li>План внедрения на 30 дней и регламент на неделю</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Автор -->
+<section class="s s--ink" id="about" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="author">
+      <div class="author__photo">
+        <figure>
+          <img src="assets/img/stage.webp" width="720" height="1280" loading="lazy" alt="Алёна Литвинова выступает на сцене, за ней экран с её именем">
+          <figcaption>Выступление на «Иннопроме», Екатеринбург, июль 2026</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2 class="h2" id="h-about">Алёна Литвинова</h2>
+        <p class="lead muted" style="margin-top:20px">Маркетолог-практик с Урала, основатель агентства М360. Собирает ИИ-штат для малого бизнеса.</p>
+        <!-- [ПРОВЕРИТЬ ЦИФРЫ С АЛЁНОЙ] -->
+        <dl class="card-t2">
+          <div><dt>Опыт</dt><dd>7 лет в налоговой Екатеринбурга. Научилась видеть систему там, где другие видят хаос</dd></div>
+          <div><dt>Агентство</dt><dd>Основала М360: маркетинг полного цикла и внедрение ИИ, до 64 проектов на Авито одновременно</dd></div>
+          <div><dt>Сцена и СМИ</dt><dd>Больше 50 выступлений на бизнес-форумах, эксперт РБК, «Коммерсанта» и Ленты.ру</dd></div>
+          <div><dt>Обучение</dt><dd>Бесплатная программа по ИИ для 150 предпринимателей в бизнес-клубе</dd></div>
+          <div><dt>Награда</dt><dd>Победитель конкурса «Женщины-лидеры Урала» в номинации «Женщины-лидеры в информационных технологиях», 2026</dd></div>
+        </dl>
+        <blockquote>
+          «Покажите, на каком шаге не получается. Разберём вместе».
+          <footer>Как Алёна ведёт занятия</footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="reel">
+      <figure><img src="assets/img/award.webp" width="720" height="1280" loading="lazy" alt="Алёна с дипломом победителя и статуэткой"><figcaption>Диплом победителя, «Иннопром»</figcaption></figure>
+      <figure><img src="assets/img/badge.webp" width="720" height="1280" loading="lazy" alt="Алёна с бейджем спикера на форуме"><figcaption>Международный жилищный конгресс, октябрь 2026</figcaption></figure>
+      <figure><img src="assets/img/audience.webp" width="720" height="1280" loading="lazy" alt="Полный зал слушателей на выступлении Алёны"><figcaption>Пять выступлений за один день</figcaption></figure>
+      <figure><img src="assets/img/podium.webp" width="720" height="1280" loading="lazy" alt="Алёна выступает с трибуны Центра международной торговли"><figcaption>Центр международной торговли, Екатеринбург</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Истории учеников -->
+<!-- [ПУБЛИКОВАТЬ ТОЛЬКО С СОГЛАСИЯ УЧЕНИКОВ] -->
+<section class="s s--paper" aria-labelledby="h-stories">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-stories">Истории учеников</h2>
+    </div>
+    <div class="stories">
+      <article class="story"><b>Александр</b><p>Сделал приложение для клининга и зарабатывает на нём</p></article>
+      <article class="story"><b>Ольга</b><p>Делает сайты и работает удалённо из Вьетнама</p></article>
+      <article class="story"><b>Туроператор</b><p>Автоматизировала соцсети: посты и видео делает с ИИ</p></article>
+      <article class="story"><b>Две выпускницы</b><p>Теперь работают SMM-специалистами в команде Алёны</p></article>
+    </div>
+    <div class="shots">
+      <figure><img src="assets/img/review-1.webp" width="789" height="800" loading="lazy" alt="Отзыв Анны в чате: доступное объяснение на пальцах, с первого занятия виден результат"><figcaption>Анна, чат школы ИИ</figcaption></figure>
+      <figure><img src="assets/img/review-4.webp" width="622" height="800" loading="lazy" alt="Отзыв ученика: пришёл с идеей приложения, ушёл с приложением, которое сам дорабатывает"><figcaption>Ученик курса Алёны и Артёма</figcaption></figure>
+      <figure><img src="assets/img/review-2.webp" width="800" height="516" loading="lazy" alt="Отзыв Светланы: спасибо за позитив и лёгкость в подаче сложной темы"><figcaption>Светлана, чат школы ИИ</figcaption></figure>
+      <figure><img src="assets/img/review-3.webp" width="800" height="497" loading="lazy" alt="Отзыв: концентрированный контент, никакой воды, ценность выше цены"><figcaption>Из личных сообщений</figcaption></figure>
+    </div>
+    <!-- Слоты под вертикальные видеоотзывы: раскомментировать и вставить ролик
+    <div class="shots">
+      <figure><video src="assets/video/review-1.mp4" poster="assets/img/review-1-poster.webp" controls playsinline preload="none" width="720" height="1280"></video><figcaption>[Видеоотзыв ученика]</figcaption></figure>
+      <figure><video src="assets/video/review-2.mp4" controls playsinline preload="none" width="720" height="1280"></video><figcaption>[Видеоотзыв ученика]</figcaption></figure>
+      <figure><video src="assets/video/review-3.mp4" controls playsinline preload="none" width="720" height="1280"></video><figcaption>[Видеоотзыв ученика]</figcaption></figure>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- 9. Тарифы -->
+<section class="s s--paper" id="tariffs" aria-labelledby="h-tariffs">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-tariffs">Выберите формат</h2>
+      <p class="lead">Старт потока 7 декабря. В группе 8–10 мест.</p>
+    </div>
+    <div class="deals">
+      <article class="deal">
+        <div class="deal__no"><span>Формат 1</span><span>в группе</span></div>
+        <h3>ИИ-штат</h3>
+        <div class="deal__price num">70 000 ₽</div>
+        <p class="deal__sub">или от 7 000 ₽ в месяц в рассрочку</p>
+        <ul>
+          <li>8 занятий в группе</li>
+          <li>Практика на вашем бизнесе</li>
+          <li>Шаблоны и библиотека запросов</li>
+          <li>Записи занятий</li>
+          <li>День защиты</li>
+        </ul>
+        <button class="btn" type="button" data-open="tariff70" data-goal="click_tariff70">Записаться</button>
+      </article>
+      <article class="deal deal--main">
+        <div class="deal__no"><span>Формат 2</span><span>с личными разборами</span></div>
+        <h3>ИИ-штат + наставник</h3>
+        <div class="deal__price num">120 000 ₽</div>
+        <p class="deal__sub">всё из первого формата и ещё две встречи один на один</p>
+        <ul>
+          <li>Всё из формата «ИИ-штат»</li>
+          <li>Консультация в начале: выбрать задачи под ваш бизнес</li>
+          <li>Консультация после ключевых недель: разбор ваших материалов</li>
+        </ul>
+        <button class="btn" type="button" data-open="tariff120" data-goal="click_tariff120">Записаться</button>
+      </article>
+    </div>
+    <div class="deals-note">
+      <p>Нужен формат для команды или один на один? «ИИ-штат с внедрением» за 180 000 ₽ и «Личный ИИ-штат» за 250 000 ₽ подбираем на ИИ-аудите.</p>
+      <!-- [сервис рассрочки] -->
+      <p class="small muted">Рассрочка до 10 месяцев. Оплата по счёту для компаний.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Честно -->
+<section class="s s--ink" aria-labelledby="h-honest">
+  <div class="wrap">
+    <div class="s__head">
+      <h2 class="h2" id="h-honest">Честно о результате</h2>
+    </div>
+    <div class="honest">
+      <div>
+        <h3>Что даёт Алёна</h3>
+        <ul>
+          <li>Программу и живые занятия</li>
+          <li>Проверку заданий и обратную связь</li>
+          <li>Шаблоны и библиотеку запросов</li>
+          <li>Ответы на вопросы в чате потока</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Что делаете вы</h3>
+        <ul>
+          <li>Выполняете задания на своём бизнесе</li>
+          <li>Приносите свои материалы</li>
+          <!-- [3–4 часа] — подтвердить с Алёной -->
+          <li>Выделяете 3–4 часа в неделю</li>
+        </ul>
+      </div>
+    </div>
+    <p class="honest-q">Я не обещаю лёгких денег. Я обещаю, что вы не останетесь с нейросетями один на один.</p>
+    <!-- Условия возврата: [указать] -->
+  </div>
+</section>
+
+<!-- 11. Вопросы -->
+<section class="s s--paper" id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="s__head"><h2 class="h2" id="h-faq">Вопросы</h2></div>
+    <div class="faq">
+      <details><summary>Я вообще не разбираюсь в технике. Справлюсь?</summary><p>Да. Курс рассчитан на тех, кто начинает с нуля. Всё показываем на экране, шаг за шагом и без терминов. Если что-то не получается, разбираем на вашем примере.</p></details>
+      <details><summary>Сколько времени нужно в неделю?</summary><p>Одно занятие на полтора часа плюс практика на вашем бизнесе. Ориентир — 3–4 часа в неделю.</p></details>
+      <details><summary>Я уже покупала курсы и бросала. Чем этот отличается?</summary><p>Маленькая группа, проверка заданий и контрольная точка каждую неделю. Каждую неделю у вас появляется готовый ИИ-сотрудник, поэтому результат виден сразу, а не в конце.</p></details>
+      <!-- [Уточнить у Алёны, обязательны ли платные подписки] -->
+      <details><summary>Нужен ли VPN и платные нейросети?</summary><p>Показываем работу и с нейросетями, доступными в России (Алиса, GigaChat), и с зарубежными. Что выбрать под ваши задачи, разбираем на первом занятии.</p></details>
+      <details><summary>Подойдёт ли курс моей нише?</summary><p>Да, если вы продаёте услуги или товары и сами ведёте маркетинг: красота, здоровье, недвижимость, психология, консалтинг, обучение. Если сомневаетесь, запишитесь на ИИ-аудит.</p></details>
+      <details><summary>Есть рассрочка и оплата по счёту?</summary><p>Да: рассрочка до 10 месяцев и оплата по счёту для компаний.</p></details>
+      <!-- [срок доступа к записям] -->
+      <details><summary>Что если я не успеваю?</summary><p>Записи занятий остаются у вас, а задания можно сдать позже в рамках потока.</p></details>
+      <details><summary>Чем ИИ-аудит отличается от практикума?</summary><p>Практикум бесплатный и для всех. ИИ-аудит — 60 минут лично с Алёной: разбираете свой бизнес и выбираете трёх ИИ-сотрудников, которые нужны первыми. 3 000 ₽ засчитываются при покупке курса.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12. Финал -->
+<section class="s s--ink" aria-labelledby="h-final">
+  <div class="wrap">
+    <div class="s__head"><h2 class="h2" id="h-final">С чего начать</h2></div>
+    <div class="final">
+      <div class="final__opt final__opt--hot">
+        <small>Бесплатно · 1–3 декабря, 19:00 мск</small>
+        <h3>Практикум «ИИ-штат за 3 вечера»</h3>
+        <p>Три вечера онлайн: нанимаете первых ИИ-сотрудников на задачах своего бизнеса вместе с Алёной.</p>
+        <a class="btn" href="practicum.html" data-goal="click_practicum">Записаться на практикум</a>
+      </div>
+      <div class="final__opt">
+        <small>3 000 ₽ · засчитываются при покупке курса</small>
+        <h3>ИИ-аудит с Алёной</h3>
+        <p>60 минут лично: какие три ИИ-сотрудника нужны вашему бизнесу первыми, и план на две недели.</p>
+        <button class="btn btn--line" type="button" data-open="audit" data-goal="click_audit">Записаться на ИИ-аудит</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <p>© 2026 Алёна Литвинова · М360</p>
+      <p>[Форма регистрации: ИП / самозанятая] Литвинова Алёна Андреевна, ИНН [ИНН]</p>
+      <p>Результат обучения зависит от действий ученика. Мы не гарантируем рост дохода — мы даём систему, практику и обратную связь.</p>
+    </div>
+    <nav aria-label="Документы">
+      <a href="#">Договор-оферта</a>
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Согласие на обработку персональных данных</a>
+      <a href="https://t.me/marketingural" target="_blank" rel="noopener">Канал «Маркетолог с Урала»</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="modal__box">
+    <button class="modal__x" type="button" data-close aria-label="Закрыть">×</button>
+    <h2 id="m-title">Заявка</h2>
+    <p id="m-sub">Алёна или менеджер свяжется с вами в течение дня.</p>
+    <div data-form-slot></div>
+  </div>
+</div>
+
+<template id="form-tpl">
+  <form class="form" novalidate>
+    <div class="form__fields">
+      <div class="form" style="gap:16px">
+        <label>Имя<input type="text" name="name" autocomplete="given-name" required><span class="err" data-err="name"></span></label>
+        <label>Телефон<input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required><span class="err" data-err="phone"></span></label>
+        <label>Ник в Telegram <small>необязательно, если удобнее получать напоминания там</small><input type="text" name="tg" placeholder="@ник"></label>
+        <label class="check"><input type="checkbox" name="consent"><span>Даю <a class="link" href="#" target="_blank">согласие на обработку персональных данных</a>. <a class="link" href="#" target="_blank">Политика конфиденциальности</a></span></label>
+        <span class="err" data-err="consent"></span>
+        <label class="check"><input type="checkbox" name="news"><span>Хочу получать полезные материалы и анонсы</span></label>
+        <div class="form__fail" role="alert"></div>
+        <button class="btn" type="submit">Отправить заявку</button>
+        <p class="form__alt">Удобнее в Telegram? <a class="link" data-bot href="#" target="_blank" rel="noopener">Записаться через бота</a></p>
+      </div>
+    </div>
+    <div class="form__msg" role="status"></div>
+  </form>
+</template>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

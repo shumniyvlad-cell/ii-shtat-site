@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//M360//II-shtat//RU
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ii-shtat-praktikum-01@m360
+DTSTAMP:20261103T000000Z
+DTSTART:20261201T160000Z
+DTEND:20261201T180000Z
+SUMMARY:ИИ-штат за 3 вечера — вечер 1 (Алёна Литвинова)
+DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+URL:https://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Через час практикум ИИ-штат
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ii-shtat-praktikum-02@m360
+DTSTAMP:20261103T000000Z
+DTSTART:20261202T160000Z
+DTEND:20261202T180000Z
+SUMMARY:ИИ-штат за 3 вечера — вечер 2 (Алёна Литвинова)
+DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+URL:https://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Через час практикум ИИ-штат
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ii-shtat-praktikum-03@m360
+DTSTAMP:20261103T000000Z
+DTSTART:20261203T160000Z
+DTEND:20261203T180000Z
+SUMMARY:ИИ-штат за 3 вечера — вечер 3 (Алёна Литвинова)
+DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+URL:https://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Через час практикум ИИ-штат
+END:VALARM
+END:VEVENT
+END:VCALENDAR
