@@ -135,7 +135,21 @@ function successHTML(source) {
     <div class="btns"><a class="btn btn--line" href="${botLink(source)}" target="_blank" rel="noopener">Написать в Telegram</a></div>`;
 }
 
+// Пока нет приёмника заявок (и документов по 152-ФЗ), телефоны не собираем: ведём в Telegram
+function mountTelegram(slot, source) {
+  const text = BOT_HAS_START
+    ? 'Запись идёт в Telegram-боте М360: откройте его и нажмите «Записаться». Напоминания придут туда же.'
+    : 'Запись откроется 11 ноября в Telegram. Подпишитесь на канал Алёны, ссылку опубликуем там первой.';
+  const box = document.createElement('div');
+  box.className = 'form';
+  box.innerHTML = `<p style="margin:0">${text}</p>
+    <a class="btn" href="${botLink(source)}" target="_blank" rel="noopener" data-goal="click_tg_${source}">${BOT_HAS_START ? 'Записаться в Telegram' : 'Открыть канал Алёны'}</a>`;
+  slot.replaceChildren(box);
+  return box;
+}
+
 function mountForm(slot, source) {
+  if (!FORM_ENDPOINT) return mountTelegram(slot, source);
   const form = $('#form-tpl').content.firstElementChild.cloneNode(true);
   const c = COPY[source] || COPY.audit;
   $('button[type="submit"]', form).textContent = c.btn;
@@ -201,7 +215,7 @@ function openModal(source, btn) {
   opener = btn;
   modal.classList.add('on');
   document.body.style.overflow = 'hidden';
-  $('input', modal).focus();
+  ($('input', modal) || $('[data-form-slot] a', modal))?.focus();
 }
 function closeModal() {
   modal.classList.remove('on');
