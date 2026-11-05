@@ -3,8 +3,8 @@
 // Приёмник заявок: вебхук CRM с серверами в России (152-ФЗ). Пусто — форма предложит записаться через Telegram.
 const FORM_ENDPOINT = '';
 // Ссылка на бота. Пока бота нет — ведём в канал.
-const BOT_URL = 'https://t.me/marketingural';
-const BOT_HAS_START = false; // true, когда BOT_URL — бот и понимает ?start=
+const BOT_URL = 'https://t.me/m360_iishtat_bot';
+const BOT_HAS_START = true; // true, когда BOT_URL — бот и понимает ?start=
 const METRIKA_ID = null; // [ID счётчика]
 
 // Практикум «ИИ-штат за 3 вечера», время московское
@@ -38,7 +38,8 @@ document.addEventListener('click', e => {
 });
 
 function botLink(start) {
-  return BOT_HAS_START ? `${BOT_URL}?start=${start}` : BOT_URL;
+  const label = { practicum: 'praktikum_site', praktikum: 'praktikum_site' }[start] || start;
+  return BOT_HAS_START ? `${BOT_URL}?start=${label}` : BOT_URL;
 }
 
 /* ---------- штатное расписание ---------- */
@@ -139,7 +140,7 @@ function successHTML(source) {
 function mountTelegram(slot, source) {
   const call = source.startsWith('tariff') || source === 'audit';
   const text = BOT_HAS_START
-    ? (call ? 'Время созвона выбирается в Telegram-боте М360: откройте его, и бот предложит свободные слоты.' : 'Запись идёт в Telegram-боте М360: откройте его и нажмите «Записаться». Напоминания придут туда же.')
+    ? (call ? 'Запись на созвон идёт в Telegram-боте М360: откройте его, выберите удобное время, и Алёна подтвердит.' : 'Запись идёт в Telegram-боте М360: откройте его и нажмите «Записаться». Напоминания придут туда же.')
     : (call ? 'Запись на созвон откроется 11 ноября в Telegram. Подпишитесь на канал Алёны: ссылку опубликуем там первой.' : 'Запись откроется 11 ноября в Telegram. Подпишитесь на канал Алёны: ссылку опубликуем там первой.');
   const box = document.createElement('div');
   box.className = 'form';
