@@ -8,8 +8,8 @@ DTSTAMP:20261103T000000Z
 DTSTART:20261201T160000Z
 DTEND:20261201T180000Z
 SUMMARY:ИИ-штат за 3 вечера — вечер 1 (Алёна Литвинова)
-DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
-URL:https://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://litvinova.online/practicum.html
+URL:https://litvinova.online/practicum.html
 BEGIN:VALARM
 TRIGGER:-PT1H
 ACTION:DISPLAY
@@ -22,8 +22,8 @@ DTSTAMP:20261103T000000Z
 DTSTART:20261202T160000Z
 DTEND:20261202T180000Z
 SUMMARY:ИИ-штат за 3 вечера — вечер 2 (Алёна Литвинова)
-DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
-URL:https://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://litvinova.online/practicum.html
+URL:https://litvinova.online/practicum.html
 BEGIN:VALARM
 TRIGGER:-PT1H
 ACTION:DISPLAY
@@ -36,8 +36,8 @@ DTSTAMP:20261103T000000Z
 DTSTART:20261203T160000Z
 DTEND:20261203T180000Z
 SUMMARY:ИИ-штат за 3 вечера — вечер 3 (Алёна Литвинова)
-DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
-URL:https://shumniyvlad-cell.github.io/ii-shtat-site/practicum.html
+DESCRIPTION:Бесплатный практикум. Ссылку на эфир пришлём за час до начала.\nhttps://litvinova.online/practicum.html
+URL:https://litvinova.online/practicum.html
 BEGIN:VALARM
 TRIGGER:-PT1H
 ACTION:DISPLAY

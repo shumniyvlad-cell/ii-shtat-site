@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /oferta.html
+Disallow: /privacy.html
+Disallow: /consent.html
+
+Sitemap: https://litvinova.online/sitemap.xml
